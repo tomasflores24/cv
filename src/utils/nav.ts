@@ -1,6 +1,8 @@
-export const navegacion = {
-    SOBRE_MI : 'sobre-mi',
-    COMPETENCIAS: 'competencias',
-    PROYECTOS: 'proyectos',
-    CONTACTO: 'contacto'
-}
+export const navItems = ['Inicio', 'Competencias', 'Experiencias', 'Contacto'];
+
+export const navName = {
+  Inicio: 'Inicio',
+  Competencias: 'Competencias',
+  Experiencias: 'Experiencias',
+  Contacto: 'Contacto',
+};

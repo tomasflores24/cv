@@ -1,10 +1,19 @@
-import { Competencias, Contacto, Proyectos, SobreMi } from '../components/';
+import { Competencias, Contacto, Proyectos, Inicio } from '../components/';
 const Main = () => {
   return (
     <main>
-      <SobreMi />
+      <Inicio />
+      <br />
+      <hr />
+      <br />
       <Competencias />
+      <br />
+      <hr />
+      <br />
       <Proyectos />
+      <br />
+      <hr />
+      <br />
       <Contacto />
     </main>
   );

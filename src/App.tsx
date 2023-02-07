@@ -1,5 +1,5 @@
-import { Footer, NavBar } from "./components";
-import Main from "./pages/Main";
+import { Footer, NavBar } from './components';
+import Main from './pages/Main';
 
 function App() {
   return (
