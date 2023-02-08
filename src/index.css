@@ -5,7 +5,19 @@ body {
   margin: 0;
   min-height: 100vh;
   position: relative;
+  background-color: #111827;
+  color: #ffffff;
 }
 html {
   scroll-behavior: smooth;
+  background-color: #111827;
+
+}
+.app {
+  /* HEADER */
+  /* background-color: #1f2937; */
+  /* MAIN */
+  /* color: #10b981; */
+  background-color: #111827;
+  color: #ffffff;
 }

@@ -1,4 +1,4 @@
-export const navItems = ['Inicio', 'Competencias', 'Experiencias', 'Contacto'];
+export const navItems = ['Inicio', 'Experiencias', 'Competencias', 'Contacto'];
 
 export const navName = {
   Inicio: 'Inicio',

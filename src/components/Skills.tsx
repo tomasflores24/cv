@@ -1,6 +1,6 @@
 import { navName } from "../utils";
 
-export const Competencias = () => {
+export const Skills = () => {
   return (
     <section id={navName.Competencias}>
       <h1>Competencias</h1>

@@ -1,6 +1,6 @@
 import { navName } from '../utils';
 
-export const Contacto = () => {
+export const Contact = () => {
   return (
     <section>
       <h2 id={navName.Contacto}>Contacto</h2>

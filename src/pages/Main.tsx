@@ -1,21 +1,18 @@
-import { Competencias, Contacto, Proyectos, Inicio } from '../components/';
+import Container from '@mui/material/Container';
+import { Contact, Home, Proyects, Skills } from '../components';
+
 const Main = () => {
   return (
-    <main>
-      <Inicio />
-      <br />
-      <hr />
-      <br />
-      <Competencias />
-      <br />
-      <hr />
-      <br />
-      <Proyectos />
-      <br />
-      <hr />
-      <br />
-      <Contacto />
-    </main>
+    <Container
+      className="container__main"
+      maxWidth={'sm'}
+      sx={{ backgroundColor: 'inherit' }}
+    >
+      <Home />
+      <Proyects />
+      <Skills />
+      <Contact />
+    </Container>
   );
 };
 

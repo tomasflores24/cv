@@ -12,8 +12,8 @@ import ListItemText from '@mui/material/ListItemText';
 import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
-import Button from '@mui/material/Button';
 import { navItems } from '../utils';
+import { ButtonNav } from '../material';
 
 interface Props {
   /**
@@ -48,14 +48,19 @@ export function NavBar(props: Props) {
       </List>
     </Box>
   );
-
   const container =
     window !== undefined ? () => window().document.body : undefined;
 
   return (
-    <Box sx={{ display: 'flex' }}>
+    <Box
+      sx={{
+        display: 'flex',
+        backgroundColor: 'inherit',
+        color: 'inherit',
+      }}
+    >
       <CssBaseline />
-      <AppBar component="nav" sx={{ backgroundColor: '#0A1A39' }}>
+      <AppBar component="nav" sx={{ backgroundColor: '#1f2937' }}>
         <Toolbar>
           <IconButton
             color="inherit"
@@ -71,15 +76,11 @@ export function NavBar(props: Props) {
             component="div"
             sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
           >
-            Tomas Flores
+            TF
           </Typography>
           <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
             {navItems.map((item) => (
-              <a href={`{#${item}`}>
-                <Button key={item} sx={{ color: '#fff' }}>
-                  {item}
-                </Button>
-              </a>
+              <ButtonNav item={item} key={item} />
             ))}
           </Box>
         </Toolbar>
