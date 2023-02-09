@@ -42,3 +42,33 @@ export const SliderProyects = ({ data }: Props) => {
     </Card>
   );
 };
+
+
+export const ButtonsSlider = ({prevProyect, nextProyect}:any) =>(
+  <Box
+        sx={{
+          margin: 'auto',
+          width: '50%',
+          display: 'flex',
+          justifyContent: 'space-evenly',
+          color: '#10b981',
+        }}
+      >
+        <Button
+          onClick={prevProyect}
+          variant="contained"
+          color="success"
+          sx={{ fontWeight: '900', backgroundColor: '#10b981' }}
+        >
+          {'<'}
+        </Button>
+        <Button
+          onClick={nextProyect}
+          variant="contained"
+          color="success"
+          sx={{ fontWeight: '900', backgroundColor: '#10b981' }}
+        >
+          {'>'}
+        </Button>
+      </Box>
+)

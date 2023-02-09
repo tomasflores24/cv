@@ -1,8 +1,7 @@
 import { useState } from 'react';
-import { SliderProyects, Title } from '../material';
+import { ButtonsSlider, SliderProyects, Title } from '../material';
 import { allProyects, navName } from '../utils';
 import Box from '@mui/material/Box';
-import { Button } from '@mui/material';
 
 export const Proyects = () => {
   const [index, setIndex] = useState(0);
@@ -20,7 +19,6 @@ export const Proyects = () => {
       : index - 1;
     setIndex(newIndex);
   };
-
   const prevProyect = () => setSlider(index, false);
   const nextProyect = () => setSlider(index, true);
 
@@ -35,35 +33,10 @@ export const Proyects = () => {
     >
       <i>ICON</i>
       <Title>{navName.Experiencias}</Title>
-      <SliderProyects data={allProyects[index]} />
 
-      <Box
-        sx={{
-          margin: 'auto',
-          width: '50%',
-          display: 'flex',
-          justifyContent: 'space-evenly',
-          color: '#10b981',
-        }}
-      >
-        <Button
-          onClick={prevProyect}
-          variant="contained"
-          color="success"
-          sx={{ fontWeight: '900', backgroundColor: '#10b981' }}
-        >
-          {'<'}
-        </Button>
-        <Button
-          onClick={nextProyect}
-          variant="contained"
-          color="success"
-          sx={{ fontWeight: '900', backgroundColor: '#10b981' }}
-        >
-          {'>'}
-        </Button>
-      </Box>
+      <SliderProyects data={allProyects[index]} />
+      <ButtonsSlider prevProyect={prevProyect} nextProyect={nextProyect}/>
+
     </Box>
   );
 };
-// 10b981
