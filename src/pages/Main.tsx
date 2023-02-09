@@ -5,7 +5,6 @@ const Main = () => {
   return (
     <Container
       className="container__main"
-      // maxWidth={'sm'}
       maxWidth={'md'}
       sx={{ backgroundColor: 'inherit' }}
     >

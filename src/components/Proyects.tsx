@@ -35,7 +35,6 @@ export const Proyects = () => {
     >
       <i>ICON</i>
       <Title>{navName.Experiencias}</Title>
-
       <SliderProyects data={allProyects[index]} />
 
       <Box
