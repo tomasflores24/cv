@@ -1,3 +1,4 @@
+export * from './Skill';
 export * from './Nav';
 export * from './SliderProyect';
 export * from './Text';

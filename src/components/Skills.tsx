@@ -1,14 +1,28 @@
-import { navName } from "../utils";
+import { Box } from '@mui/material';
+import { allSkills, navName } from '../utils';
+import { Skill, Title } from '../material';
 
 export const Skills = () => {
   return (
-    <section id={navName.Competencias}>
-      <h1>Competencias</h1>
-      <p>react</p>
-      <p>react</p>
-      <p>react</p>
-      <p>react</p>
-      <p>react</p>
-    </section>
+    <Box
+      component="section"
+      id={navName.Competencias}
+      sx={{ marginBottom: '6rem' }}
+    >
+      <Title>Competencias</Title>
+
+      <Box
+        sx={{
+          paddingTop: '1.5rem',
+          display: 'flex',
+          justifyContent: 'space-evenly',
+          flexWrap: 'wrap',
+        }}
+      >
+        {allSkills.map((skillName) => (
+          <Skill skillName={skillName} />
+        ))}
+      </Box>
+    </Box>
   );
 };
