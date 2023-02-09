@@ -1,6 +1,7 @@
 import Box from '@mui/material/Box';
-import { Subtitle, Title } from '../material';
+import { IconApp, Subtitle, Title } from '../material';
 import { navName } from '../utils';
+import { faUser } from '@fortawesome/free-solid-svg-icons';
 
 export const Home = () => {
   return (
@@ -8,10 +9,11 @@ export const Home = () => {
       id={navName.Inicio}
       component="section"
       sx={{
-        paddingTop: '15rem',
+        paddingTop: '10rem',
         paddingBottom: '10rem',
       }}
     >
+      <IconApp nameIcon={faUser} />
       <Title>{navName.Inicio}</Title>
       <Subtitle>
         Soy Tomas Flores, tengo 19 años y soy un desarrollador Fullstack.

@@ -1,14 +1,17 @@
 import { Box } from '@mui/material';
 import { allSkills, navName } from '../utils';
-import { Skill, Title } from '../material';
+import { IconApp, Skill, Title } from '../material';
+import { faMicrochip } from '@fortawesome/free-solid-svg-icons';
 
 export const Skills = () => {
   return (
     <Box
       component="section"
       id={navName.Competencias}
-      sx={{ marginBottom: '6rem' }}
+      sx={{ marginBottom: '6rem', paddingBottom:'5rem' }}
     >
+      <IconApp nameIcon={faMicrochip} />
+
       <Title>Competencias</Title>
 
       <Box
@@ -20,7 +23,7 @@ export const Skills = () => {
         }}
       >
         {allSkills.map((skillName) => (
-          <Skill skillName={skillName} />
+          <Skill key={skillName} skillName={skillName} />
         ))}
       </Box>
     </Box>

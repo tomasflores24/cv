@@ -1,22 +1,17 @@
 import { Box } from '@mui/material';
 import { navName } from '../utils';
+import { Title, IconApp } from '../material';
+import { faPhone } from '@fortawesome/free-solid-svg-icons';
 
 export const Contact = () => {
   return (
     <Box
       id={navName.Contacto}
       component="section"
-      sx={{ marginBottom: '5rem' }}
+      sx={{ marginBottom: '5rem', paddingTop: '5rem', paddingBottom: '5rem' }}
     >
-      <h1>Contacto</h1>
-      <p>isicing elit. Odio laborum
-      </p>
-      <p>
-        Lorem,  tempora aperiam vel quam quasi corporis eveniet amet.
-      </p>
-      <p>
-        Lorem,  quasi corporis eveniet amet.
-      </p>
+      <IconApp nameIcon={faPhone} />
+      <Title>Contacto</Title> 
     </Box>
   );
 };

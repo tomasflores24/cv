@@ -8,14 +8,14 @@ export const Title = ({ children }: ChildrenProps) => (
   <Typography
     variant="h4"
     gutterBottom
-    sx={{ fontWeight: 'bold', marginBottom: '1rem' }}
+    sx={{ fontWeight: 'bold', marginBottom: '1rem', textAlign:'center' }}
   >
     {children}
   </Typography>
 );
 
 export const Subtitle = ({ children }: ChildrenProps) => (
-  <Typography variant="subtitle1" gutterBottom sx={{ opacity: '75%' }}>
+  <Typography variant="subtitle1" gutterBottom sx={{ opacity: '75%', textAlign:'center' }}>
     {children}
   </Typography>
 );
