@@ -15,6 +15,7 @@ export const Home = () => {
     >
       <IconApp nameIcon={faUser} />
       <Title>{navName.Inicio}</Title>
+      
       <Subtitle>
         Soy Tomas Flores, tengo 19 años y soy un desarrollador Fullstack.
       </Subtitle>

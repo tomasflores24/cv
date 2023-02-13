@@ -1,3 +1,4 @@
+export * from './ContactInformation';
 export * from './Icons';
 export * from './Nav';
 export * from './Skill';

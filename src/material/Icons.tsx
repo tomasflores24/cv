@@ -1,22 +1,36 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
-import { faUser } from '@fortawesome/free-solid-svg-icons';
-
 import { Box } from '@mui/system';
 import { IconProp } from '@fortawesome/fontawesome-svg-core';
 
-export const IconApp = ({ nameIcon }: { nameIcon: IconProp }) => {
+interface Props {
+  nameIcon: IconProp;
+  size?: string;
+  display?: string;
+  width?: string;
+  opacity?: string;
+  color?: string;
+}
+
+export const IconApp = ({
+  nameIcon,
+  size = 'xx-large',
+  display = 'block',
+  width = '100%',
+  opacity = '70%',
+  color = 'white',
+}: Props) => {
+  console.log(size);
   return (
     <Box
       component="i"
       sx={{
-        backgroundColor: 'gra',
-        width: '100%',
-        display: 'block',
-        fontSize: 'xx-large',
+        width: `${width}`,
+        display: `${display}`,
+        fontSize: `${size}`,
         textAlign: 'center',
         marginBottom: '.6rem',
-        opacity: '70%',
+        opacity: `${opacity}`,
+        color: `${color}`,
       }}
     >
       <FontAwesomeIcon icon={nameIcon} />
