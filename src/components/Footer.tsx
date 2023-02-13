@@ -14,7 +14,7 @@ export const Footer = () => {
         // CAMBIAR FUENTE
       }}
     >
-      © 2023 My Porfolio Inc. ·Privacy Policy · Terms
+      © 2023 Mi Porfolio
     </Box>
   );
 };
