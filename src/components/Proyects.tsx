@@ -29,7 +29,7 @@ export const Proyects = () => {
       component="section"
       sx={{
         paddingTop: '5rem',
-        paddingBottom: '10rem',
+        paddingBottom: '11rem',
       }}
     >
       <IconApp nameIcon={faCode} />

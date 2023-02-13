@@ -8,7 +8,7 @@ export const Contact = () => {
     <Box
       id={navName.Contacto}
       component="section"
-      sx={{ marginBottom: '5rem', paddingTop: '5rem', paddingBottom: '5rem' }}
+      sx={{ marginBottom: '5rem', paddingTop: '1rem', paddingBottom: '5rem' }}
     >
       <IconApp nameIcon={faPhone} />
       <Title>Contacto</Title>

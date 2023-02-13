@@ -11,7 +11,6 @@ body {
 html {
   scroll-behavior: smooth;
   background-color: #111827;
-
 }
 .app {
   /* HEADER */
@@ -21,5 +20,7 @@ html {
   background-color: #111827;
   color: #ffffff;
 }
-
-
+a {
+  text-decoration: none;
+  color: inherit;
+}

@@ -29,7 +29,7 @@ const drawerWidth = 240;
 
 export function NavBar(props: Props) {
   const { window } = props;
-  const [mobileOpen, setMobileOpen] = React.useState(true);
+  const [mobileOpen, setMobileOpen] = React.useState(false);
 
   const handleDrawerToggle = () => setMobileOpen((prevState) => !prevState);
 
