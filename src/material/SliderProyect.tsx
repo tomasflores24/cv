@@ -1,19 +1,22 @@
 import Card from '@mui/material/Card';
-import CardActions from '@mui/material/CardActions';
-import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
-import Button from '@mui/material/Button';
-import Typography from '@mui/material/Typography';
 import { DataProyect } from '../utils';
 import { Box } from '@mui/material';
+import {
+  CardActions,
+  CardContent,
+  CardMedia,
+  Button,
+  Typography,
+} from '@mui/material';
 
 interface Props {
   data: DataProyect;
+  length: number;
+  index: number;
 }
 
-export const SliderProyects = ({ data }: Props) => {
-  const { title, image, content } = data;
-
+export const SliderProyects = ({ data, length, index }: Props) => {
+  const { title, image, content, deploy, gitHub } = data;
   return (
     <Card
       component="figure"
@@ -22,10 +25,28 @@ export const SliderProyects = ({ data }: Props) => {
         margin: 'auto',
         marginTop: '3rem',
         marginBottom: '1.5rem',
+        position: 'relative',
       }}
     >
       <CardMedia component="img" alt="Portada" height="140" image={image} />
       <CardContent component="figcaption">
+        <Typography
+          component="p"
+          sx={{
+            backgroundColor: '#676767',
+            color: 'white',
+            opacity: '90%',
+            padding: '.2rem',
+            position: 'absolute',
+            top: '0.5rem',
+            right: '0.5rem',
+            borderRadius: '5px',
+            overflow: 'hidden|',
+          }}
+        >
+          {index}/{length}
+        </Typography>
+
         <Typography gutterBottom variant="h5" component="h3">
           {title}
         </Typography>
@@ -35,9 +56,17 @@ export const SliderProyects = ({ data }: Props) => {
       </CardContent>
 
       <CardActions>
-        {/* falta agregar ss respectivos links */}
-        <Button size="small">GitHub</Button>
-        <Button size="small">Deploy</Button>
+        <Button variant="outlined" size="small" disabled={!gitHub}>
+          <Box component="a" href={gitHub || '*'} target="_blank">
+            GitHub
+          </Box>
+        </Button>
+
+        <Button variant="outlined" size="small" disabled={!deploy}>
+          <Box component="a" href={deploy || '*'} target="_blank">
+            Deploy
+          </Box>
+        </Button>
       </CardActions>
     </Card>
   );

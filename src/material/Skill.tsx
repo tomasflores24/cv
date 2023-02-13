@@ -1,11 +1,11 @@
-import { Paper, SvgIcon } from '@mui/material';
+import { Paper, SvgIcon, Grid } from '@mui/material';
 
 export const IconCheck = () => {
   return (
     <SvgIcon
       sx={{
         color: '#34d399',
-        marginRight: '.7rem',
+        marginRight: '.3rem',
       }}
     >
       <path
@@ -19,20 +19,42 @@ export const IconCheck = () => {
 
 export const Skill = ({ skillName }: { skillName: string }) => {
   return (
-    <Paper
+    <Grid
+      item
+      xs={10}
+      md={5}
       sx={{
         backgroundColor: '#1f2937',
         color: 'white',
-        marginBottom: '1rem',
+
         paddingTop: '.5rem',
         paddingBottom: '.5rem',
         paddingLeft: '1.2rem',
-        width: '40%',
+        margin: 'auto',
+        marginBottom: '1rem',
+        borderRadius:'3px'
       }}
-      elevation={3}
     >
       <IconCheck />
       {skillName}
-    </Paper>
+    </Grid>
   );
 };
+
+{
+  /* <Paper
+  sx={{
+    backgroundColor: '#1f2937',
+    color: 'white',
+    marginBottom: '1rem',
+    paddingTop: '.5rem',
+    paddingBottom: '.5rem',
+    paddingLeft: '1.2rem',
+    width: '40%',
+  }}
+  elevation={3}
+>
+  <IconCheck />
+  {skillName}
+</Paper>; */
+}

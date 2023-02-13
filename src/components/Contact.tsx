@@ -1,4 +1,4 @@
-import { Box } from '@mui/material';
+import { Box, Grid } from '@mui/material';
 import { contactData, navName } from '../utils';
 import { Title, IconApp, ContactInformation } from '../material';
 import { faPhone } from '@fortawesome/free-solid-svg-icons';
@@ -13,15 +13,15 @@ export const Contact = () => {
       <IconApp nameIcon={faPhone} />
       <Title>Contacto</Title>
 
-      <Box sx={{ paddingTop: '2rem' }}>
+      <Grid container sx={{ paddingTop: '2rem' }}>
         {contactData.map((c) => (
-          <Box key={c.title}>
+          <Grid item xs={11} md={7} margin="auto" key={c.title}>
             <ContactInformation Icon={c.icon} title={c.title} link={c.link}>
               {c.content}
             </ContactInformation>
-          </Box>
+          </Grid>
         ))}
-      </Box>
+      </Grid>
     </Box>
   );
 };

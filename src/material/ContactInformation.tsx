@@ -1,8 +1,6 @@
-import Box from '@mui/material/Box';
 import { IconApp } from './Icons';
-import Typography from '@mui/material/Typography';
+import { Paper, Typography, Box } from '@mui/material';
 import { IconProp } from '@fortawesome/fontawesome-svg-core';
-import { Paper } from '@mui/material';
 
 interface Props {
   Icon: IconProp;
@@ -22,12 +20,11 @@ export const ContactInformation = ({
       sx={{
         color: 'white',
         display: 'flex',
-        width: '65%',
         margin: 'auto',
         marginBottom: '1.5rem',
         backgroundColor: '#1f2937',
         padding: '.7rem',
-        ":hover": {boxShadow:'0 0 1px 1px gray'}
+        ':hover': { boxShadow: '0 0 1px 1px gray' },
       }}
       component="a"
       href={link}

@@ -1,19 +1,21 @@
 import * as React from 'react';
-import AppBar from '@mui/material/AppBar';
-import Box from '@mui/material/Box';
-import CssBaseline from '@mui/material/CssBaseline';
-import Divider from '@mui/material/Divider';
-import Drawer from '@mui/material/Drawer';
-import IconButton from '@mui/material/IconButton';
-import List from '@mui/material/List';
-import ListItem from '@mui/material/ListItem';
-import ListItemButton from '@mui/material/ListItemButton';
-import ListItemText from '@mui/material/ListItemText';
 import MenuIcon from '@mui/icons-material/Menu';
-import Toolbar from '@mui/material/Toolbar';
-import Typography from '@mui/material/Typography';
 import { navItems } from '../utils';
 import { ButtonNav } from '../material';
+import {
+  Typography,
+  AppBar,
+  Box,
+  CssBaseline,
+  Divider,
+  Drawer,
+  IconButton,
+  List,
+  ListItem,
+  ListItemButton,
+  ListItemText,
+  Toolbar,
+} from '@mui/material';
 
 interface Props {
   /**
@@ -27,12 +29,20 @@ const drawerWidth = 240;
 
 export function NavBar(props: Props) {
   const { window } = props;
-  const [mobileOpen, setMobileOpen] = React.useState(false);
+  const [mobileOpen, setMobileOpen] = React.useState(true);
 
   const handleDrawerToggle = () => setMobileOpen((prevState) => !prevState);
 
   const drawer = (
-    <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
+    <Box
+      onClick={handleDrawerToggle}
+      sx={{
+        textAlign: 'center',
+        color: 'white',
+        backgroundColor: '#1f2937',
+        minHeight: '100vh',
+      }}
+    >
       <Typography variant="h5" sx={{ my: 2, fontWeight: 'bold' }}>
         Tomas Flores
       </Typography>
@@ -40,7 +50,12 @@ export function NavBar(props: Props) {
       <List>
         {navItems.map((item) => (
           <ListItem key={item} disablePadding>
-            <ListItemButton sx={{ textAlign: 'center' }}>
+            <ListItemButton
+              sx={{
+                textAlign: 'center',
+                ':hover': { backgroundColor: '#161c26' },
+              }}
+            >
               <ListItemText primary={item} />
             </ListItemButton>
           </ListItem>

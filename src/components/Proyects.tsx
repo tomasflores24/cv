@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { ButtonsSlider, IconApp, SliderProyects, Title } from '../material';
 import { allProyects, navName } from '../utils';
-import Box from '@mui/material/Box';
+import { Box } from '@mui/material';
 import { faCode } from '@fortawesome/free-solid-svg-icons';
 
 export const Proyects = () => {
@@ -35,8 +35,12 @@ export const Proyects = () => {
       <IconApp nameIcon={faCode} />
 
       <Title>{navName.Experiencias}</Title>
+      <SliderProyects
+        data={allProyects[index]}
+        length={allProyects.length}
+        index={index + 1}
+      />
 
-      <SliderProyects data={allProyects[index]} />
       <ButtonsSlider prevProyect={prevProyect} nextProyect={nextProyect} />
     </Box>
   );

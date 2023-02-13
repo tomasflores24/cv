@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { Box } from '@mui/system';
 import { IconProp } from '@fortawesome/fontawesome-svg-core';
+import { Box } from '@mui/system';
 
 interface Props {
   nameIcon: IconProp;
@@ -19,7 +19,6 @@ export const IconApp = ({
   opacity = '70%',
   color = 'white',
 }: Props) => {
-  console.log(size);
   return (
     <Box
       component="i"
