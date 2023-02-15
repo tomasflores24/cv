@@ -1,4 +1,4 @@
-import { Paper, SvgIcon, Grid } from '@mui/material';
+import { SvgIcon, Grid, Typography } from '@mui/material';
 
 export const IconCheck = () => {
   return (
@@ -6,6 +6,8 @@ export const IconCheck = () => {
       sx={{
         color: '#34d399',
         marginRight: '.3rem',
+        position: 'absolute',
+        left: '15px',
       }}
     >
       <path
@@ -25,18 +27,19 @@ export const Skill = ({ skillName }: { skillName: string }) => {
       md={5}
       sx={{
         backgroundColor: '#1f2937',
-        color: 'white',
-
-        paddingTop: '.5rem',
-        paddingBottom: '.5rem',
-        paddingLeft: '1.2rem',
+        position: 'relative',
         margin: 'auto',
         marginBottom: '1rem',
-        borderRadius:'3px'
+
+        paddingBottom: '.5rem',
+        paddingTop: '.5rem',
+        paddingLeft: '2.8rem',
+
+        borderRadius: '3px',
       }}
     >
       <IconCheck />
-      {skillName}
+      <Typography>{skillName}</Typography>
     </Grid>
   );
 };

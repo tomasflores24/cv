@@ -20,15 +20,14 @@ export const SliderProyects = ({ data, length, index }: Props) => {
   return (
     <Card
       component="figure"
+      
       sx={{
         maxWidth: '70%',
         margin: 'auto',
-        marginTop: '3rem',
-        marginBottom: '1.5rem',
         position: 'relative',
       }}
     >
-      <CardMedia component="img" alt="Portada" height="140" image={image} />
+      <CardMedia component="img" alt="Portada" height="360" image={image} />
       <CardContent component="figcaption">
         <Typography
           component="p"

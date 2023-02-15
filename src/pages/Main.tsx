@@ -1,4 +1,4 @@
-import Container from '@mui/material/Container';
+import { Container } from '@mui/material';
 import { Contact, Home, Proyects, Skills } from '../components';
 
 const Main = () => {
@@ -9,6 +9,7 @@ const Main = () => {
       sx={{ backgroundColor: 'inherit' }}
     >
       <Home />
+
       <Proyects />
       <Skills />
       <Contact />
