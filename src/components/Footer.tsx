@@ -5,9 +5,9 @@ export const Footer = () => {
     <Box
       component="footer"
       sx={{
-        boxShadow: '0rem .8rem 1rem 1rem black',
-        backgroundColor: '#0f1725',
-        padding: '1.5rem',
+        boxShadow: '0rem 1rem 1rem 1rem black',
+        bgcolor: 'primary.main',
+        p: '1.5rem',
         opacity: '70%',
         fontSize: 'small',
         textAlign: 'center',

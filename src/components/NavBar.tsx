@@ -39,7 +39,7 @@ export function NavBar(props: Props) {
       sx={{
         textAlign: 'center',
         color: 'white',
-        backgroundColor: '#1f2937',
+        bgcolor: 'primary.main',
         minHeight: '100vh',
       }}
     >
@@ -49,11 +49,11 @@ export function NavBar(props: Props) {
       <Divider />
       <List>
         {navItems.map((item) => (
-          <ListItem key={item} disablePadding>
+          <ListItem key={item} disablePadding component="a" href={`/#${item}`}>
             <ListItemButton
               sx={{
                 textAlign: 'center',
-                ':hover': { backgroundColor: '#161c26' },
+                ':hover': { bgcolor: '#161c26' },
               }}
             >
               <ListItemText primary={item} />
@@ -70,12 +70,11 @@ export function NavBar(props: Props) {
     <Box
       sx={{
         display: 'flex',
-        backgroundColor: 'inherit',
-        color: 'inherit',
+        bgcolor: 'red',
       }}
     >
       <CssBaseline />
-      <AppBar component="nav" sx={{ backgroundColor: '#1f2937' }}>
+      <AppBar component="nav" sx={{ bgcolor: 'primary.light' }}>
         <Toolbar>
           <IconButton
             color="inherit"

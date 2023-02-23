@@ -5,17 +5,10 @@ import { faUser } from '@fortawesome/free-solid-svg-icons';
 
 export const Home = () => {
   return (
-    <Box
-      id={navName.Inicio}
-      component="section"
-      sx={{
-        paddingTop: '10rem',
-        paddingBottom: '10rem',
-      }}
-    >
+    <Box id={navName.Inicio} component="section" sx={{ py: '10rem' }}>
       <IconApp nameIcon={faUser} />
       <Title>{navName.Inicio}</Title>
-      
+
       <Subtitle>
         Soy Tomas Flores, tengo 19 años y soy un desarrollador Fullstack.
       </Subtitle>

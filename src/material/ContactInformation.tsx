@@ -21,9 +21,9 @@ export const ContactInformation = ({
         color: 'white',
         display: 'flex',
         margin: 'auto',
-        marginBottom: '1.5rem',
-        backgroundColor: '#1f2937',
-        padding: '.7rem',
+        mb: '1.5rem',
+        bgcolor: 'primary.light',
+        p: '.7rem',
         ':hover': { boxShadow: '0 0 1px 1px gray' },
       }}
       component="a"
@@ -36,9 +36,9 @@ export const ContactInformation = ({
         display="inline"
         width="auto"
         opacity="100%"
-        color="#34d399"
+        color="secondary.main"
       />
-      <Box sx={{ marginLeft: '1rem' }}>
+      <Box sx={{ ml: '1rem' }}>
         <Typography sx={{ fontWeight: '600', fontSize: '1.1rem' }}>
           {title}
         </Typography>

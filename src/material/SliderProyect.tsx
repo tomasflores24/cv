@@ -1,13 +1,14 @@
-import Card from '@mui/material/Card';
-import { DataProyect } from '../utils';
-import { Box } from '@mui/material';
 import {
   CardActions,
   CardContent,
   CardMedia,
   Button,
   Typography,
+  Box,
+  Card,
 } from '@mui/material';
+import { DataProyect } from '../utils';
+import { useState } from 'react';
 
 interface Props {
   data: DataProyect;
@@ -20,10 +21,9 @@ export const SliderProyects = ({ data, length, index }: Props) => {
   return (
     <Card
       component="figure"
-      
       sx={{
-        maxWidth: '70%',
-        margin: 'auto',
+        maxWidth: '80%',
+        m: 'auto',
         position: 'relative',
       }}
     >
@@ -32,10 +32,10 @@ export const SliderProyects = ({ data, length, index }: Props) => {
         <Typography
           component="p"
           sx={{
-            backgroundColor: '#676767',
+            bgcolor: '#676767',
             color: 'white',
             opacity: '90%',
-            padding: '.2rem',
+            p: '.2rem',
             position: 'absolute',
             top: '0.5rem',
             right: '0.5rem',
@@ -71,31 +71,65 @@ export const SliderProyects = ({ data, length, index }: Props) => {
   );
 };
 
-export const ButtonsSlider = ({ prevProyect, nextProyect }: any) => (
-  <Box
-    sx={{
-      margin: 'auto',
-      width: '50%',
-      display: 'flex',
-      justifyContent: 'space-evenly',
-      color: '#10b981',
-    }}
-  >
-    <Button
-      onClick={prevProyect}
-      variant="contained"
-      color="success"
-      sx={{ fontWeight: '900', backgroundColor: '#10b981' }}
+export const ButtonsSlider = ({ prevProyect, nextProyect }: any) => {
+  const [disabledButton, setDisabledButton] = useState(false);
+
+  const setSlider = (next: boolean) => {
+    setDisabledButton(true);
+    next ? nextProyect() : prevProyect();
+    setTimeout(() => setDisabledButton(false), 500);
+  };
+
+  return (
+    <Box
+      sx={{
+        m: 'auto',
+        width: '50%',
+        display: 'flex',
+        justifyContent: 'space-evenly',
+      }}
     >
-      {'<'}
-    </Button>
-    <Button
-      onClick={nextProyect}
-      variant="contained"
-      color="success"
-      sx={{ fontWeight: '900', backgroundColor: '#10b981' }}
-    >
-      {'>'}
-    </Button>
-  </Box>
-);
+      <Button
+        disabled={disabledButton}
+        onClick={() => setSlider(false)}
+        variant="contained"
+        color="success"
+        sx={{
+          fontWeight: '900',
+          bgcolor: 'secondary.main',
+          ':hover': {
+            bgcolor: '#1CD698',
+          },
+          ':disabled': {
+            bgcolor: '#11845E',
+            color: 'white',
+            opacity: '70%',
+          },
+        }}
+      >
+        {'<'}
+      </Button>
+      <Button
+        disabled={disabledButton}
+        onClick={() => setSlider(true)}
+        variant="contained"
+        color="success"
+        sx={{
+          fontWeight: '900',
+          bgcolor: 'secondary.main',
+
+          ':hover': {
+            bgcolor: '#1CD698',
+          },
+          ':disabled': {
+            bgcolor: '#11845E',
+            color: 'white',
+            opacity: '70%',
+          },
+        }}
+      >
+        {'>'}
+      </Button>
+    </Box>
+  );
+};

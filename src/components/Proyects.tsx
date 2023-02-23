@@ -38,16 +38,12 @@ export const Proyects = () => {
     <Box
       id={navName.Experiencias}
       component="section"
-      sx={{
-        paddingTop: '5rem',
-        paddingBottom: '11rem',
-      }}
+      sx={{ pt: '5rem', pb: '11rem' }}
     >
       <IconApp nameIcon={faCode} />
       <Title>{navName.Experiencias}</Title>
 
-      {/* #1f2937 */}
-      <Box sx={{ backgroundColor: '', py: '3rem' }}>
+      <Box sx={{ py: '3rem' }}>
         {loading ? (
           <SkeletonLoading />
         ) : (

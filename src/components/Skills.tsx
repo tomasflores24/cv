@@ -8,18 +8,13 @@ export const Skills = () => {
     <Box
       component="section"
       id={navName.Competencias}
-      sx={{ marginBottom: '6rem', paddingBottom: '5rem' }}
+      sx={{ mb: '6rem', pb: '5rem' }}
     >
       <IconApp nameIcon={faMicrochip} />
 
       <Title>Competencias</Title>
 
-      <Grid
-        container
-        sx={{
-          paddingTop: '1.5rem',
-        }}
-      >
+      <Grid container sx={{ pt: '1.5rem' }}>
         {allSkills.map((skillName) => (
           <Skill key={skillName} skillName={skillName} />
         ))}
@@ -27,18 +22,3 @@ export const Skills = () => {
     </Box>
   );
 };
-
-{
-  /* <Box
-  sx={{
-    paddingTop: '1.5rem',
-    display: 'flex',
-    justifyContent: 'space-evenly',
-    flexWrap: 'wrap',
-  }}
->
-  {allSkills.map((skillName) => (
-    <Skill key={skillName} skillName={skillName} />
-  ))}
-</Box>; */
-}

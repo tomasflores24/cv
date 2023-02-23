@@ -4,8 +4,8 @@ export const IconCheck = () => {
   return (
     <SvgIcon
       sx={{
-        color: '#34d399',
-        marginRight: '.3rem',
+        color: 'secondary.main',
+        mr: '.3rem',
         position: 'absolute',
         left: '15px',
       }}
@@ -26,15 +26,10 @@ export const Skill = ({ skillName }: { skillName: string }) => {
       xs={10}
       md={5}
       sx={{
-        backgroundColor: '#1f2937',
+        bgcolor: 'primary.light',
         position: 'relative',
-        margin: 'auto',
-        marginBottom: '1rem',
-
-        paddingBottom: '.5rem',
-        paddingTop: '.5rem',
-        paddingLeft: '2.8rem',
-
+        m: 'auto auto 1rem auto',
+        p: '.5rem 0rem .5rem 2.8rem',
         borderRadius: '3px',
       }}
     >
@@ -43,21 +38,3 @@ export const Skill = ({ skillName }: { skillName: string }) => {
     </Grid>
   );
 };
-
-{
-  /* <Paper
-  sx={{
-    backgroundColor: '#1f2937',
-    color: 'white',
-    marginBottom: '1rem',
-    paddingTop: '.5rem',
-    paddingBottom: '.5rem',
-    paddingLeft: '1.2rem',
-    width: '40%',
-  }}
-  elevation={3}
->
-  <IconCheck />
-  {skillName}
-</Paper>; */
-}

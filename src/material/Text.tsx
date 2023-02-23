@@ -8,7 +8,7 @@ export const Title = ({ children }: ChildrenProps) => (
   <Typography
     variant="h4"
     gutterBottom
-    sx={{ fontWeight: 'bold', marginBottom: '1rem', textAlign:'center' }}
+    sx={{ fontWeight: 'bold', mb: '1rem', textAlign:'center' }}
   >
     {children}
   </Typography>

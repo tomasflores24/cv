@@ -27,7 +27,7 @@ export const IconApp = ({
         display: `${display}`,
         fontSize: `${size}`,
         textAlign: 'center',
-        marginBottom: '.6rem',
+        mb: '.6rem',
         opacity: `${opacity}`,
         color: `${color}`,
       }}

@@ -8,12 +8,12 @@ export const Contact = () => {
     <Box
       id={navName.Contacto}
       component="section"
-      sx={{ marginBottom: '5rem', paddingTop: '1rem', paddingBottom: '5rem' }}
+      sx={{ mb: '5rem', pt: '1rem', pb: '5rem' }}
     >
       <IconApp nameIcon={faPhone} />
       <Title>Contacto</Title>
 
-      <Grid container sx={{ paddingTop: '2rem' }}>
+      <Grid container sx={{ pt: '2rem' }}>
         {contactData.map((c) => (
           <Grid item xs={11} md={7} margin="auto" key={c.title}>
             <ContactInformation Icon={c.icon} title={c.title} link={c.link}>
