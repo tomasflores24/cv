@@ -8,14 +8,14 @@ export const Contact = () => {
     <Box
       id={navName.Contacto}
       component="section"
-      sx={{ mb: '5rem', pt: '1rem', pb: '5rem' }}
+      sx={{ mb: { xs: '5rem', md: '7rem' }, pt: '1rem' }}
     >
       <IconApp nameIcon={faPhone} />
       <Title>Contacto</Title>
 
-      <Grid container sx={{ pt: '2rem' }}>
+      <Grid container pt="2rem">
         {contactData.map((c) => (
-          <Grid item xs={11} md={7} margin="auto" key={c.title}>
+          <Grid item xs={12} md={7} lg={10} margin="auto" key={c.title}>
             <ContactInformation Icon={c.icon} title={c.title} link={c.link}>
               {c.content}
             </ContactInformation>
@@ -25,3 +25,4 @@ export const Contact = () => {
     </Box>
   );
 };
+// RESPONSIVE DE CONTACTO con galaxy fold

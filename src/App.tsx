@@ -1,14 +1,19 @@
-import { Footer, NavBar } from './components';
-import Main from './pages/Main';
+import { Contact, Footer, Home, NavBar, Proyects, Skills } from './components';
+import { Box, Container } from '@mui/material';
 
 function App() {
   return (
-    <div className="app">
+    <Box color="white" bgcolor="primary.main">
       <NavBar />
+      <Container component="main" maxWidth={'md'}>
+        <Home />
+        <Proyects />
+        <Skills />
+        <Contact />
+      </Container>
 
-      <Main />
       <Footer />
-    </div>
+    </Box>
   );
 }
 

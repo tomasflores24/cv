@@ -4,17 +4,18 @@ export const allSkills: Array<string> = [
   'Node',
   'Redux',
 
+  // 'Express',
+
   'PostgreSql',
   'Sequelize',
-  'JavaScript',
+  // 'JavaScript',
 
-  'Express',
-
-  'Css',
+  // 'Css',
   'Material UI',
   'Tailwind',
-  'HTML',
 
-  'Git & GitHub',
-  'Scrum',
+  // 'HTML',
+
+  // 'Git & GitHub',
+  // 'Scrum',
 ];

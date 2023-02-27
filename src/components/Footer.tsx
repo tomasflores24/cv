@@ -7,7 +7,7 @@ export const Footer = () => {
       sx={{
         boxShadow: '0rem 1rem 1rem 1rem black',
         bgcolor: 'primary.main',
-        p: '1.5rem',
+        py: '1.5rem',
         opacity: '70%',
         fontSize: 'small',
         textAlign: 'center',

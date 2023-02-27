@@ -38,12 +38,12 @@ export const Proyects = () => {
     <Box
       id={navName.Experiencias}
       component="section"
-      sx={{ pt: '5rem', pb: '11rem' }}
+      sx={{ pt: '7rem', pb: '11rem' }}
     >
       <IconApp nameIcon={faCode} />
       <Title>{navName.Experiencias}</Title>
 
-      <Box sx={{ py: '3rem' }}>
+      <Box sx={{ py: '1rem' }}>
         {loading ? (
           <SkeletonLoading />
         ) : (

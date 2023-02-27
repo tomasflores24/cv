@@ -67,12 +67,7 @@ export function NavBar(props: Props) {
     window !== undefined ? () => window().document.body : undefined;
 
   return (
-    <Box
-      sx={{
-        display: 'flex',
-        bgcolor: 'red',
-      }}
-    >
+    <Box sx={{ display: 'flex', bgcolor: 'red' }}>
       <CssBaseline />
       <AppBar component="nav" sx={{ bgcolor: 'primary.light' }}>
         <Toolbar>

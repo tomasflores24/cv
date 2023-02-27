@@ -38,16 +38,11 @@ export const ContactInformation = ({
         opacity="100%"
         color="secondary.main"
       />
-      <Box sx={{ ml: '1rem' }}>
+      <Box ml="1rem">
         <Typography sx={{ fontWeight: '600', fontSize: '1.1rem' }}>
           {title}
         </Typography>
-        <Typography
-          sx={{
-            opacity: '70%',
-            fontSize: '.9rem',
-          }}
-        >
+        <Typography sx={{ opacity: '70%', fontSize: '.9rem' }}>
           {children}
         </Typography>
       </Box>

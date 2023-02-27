@@ -8,7 +8,7 @@ export const Skills = () => {
     <Box
       component="section"
       id={navName.Competencias}
-      sx={{ mb: '6rem', pb: '5rem' }}
+      sx={{ mb: '6rem', pb: '5rem', pt:'7rem' }}
     >
       <IconApp nameIcon={faMicrochip} />
 

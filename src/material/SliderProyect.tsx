@@ -22,7 +22,7 @@ export const SliderProyects = ({ data, length, index }: Props) => {
     <Card
       component="figure"
       sx={{
-        maxWidth: '80%',
+        maxWidth: { xs: '100%', sm: '80%' },
         m: 'auto',
         position: 'relative',
       }}
@@ -55,7 +55,7 @@ export const SliderProyects = ({ data, length, index }: Props) => {
       </CardContent>
 
       <CardActions>
-        <Button variant="outlined" size="small" disabled={!gitHub}>
+        <Button color='primary' variant="outlined" size="small" disabled={!gitHub}>
           <Box component="a" href={gitHub || '*'} target="_blank">
             GitHub
           </Box>
