@@ -13,17 +13,14 @@ export const Home = () => {
         Soy Tomas Flores, tengo 19 años y soy un desarrollador Fullstack.
       </Subtitle>
       <Subtitle>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis, velit.
-        voluptatem libero omnis porro fugiat recusandae?
+        Busco ser parte de un equipo de desarrollo en el cual pueda aportar mis
+        habilidades logísticas en el desarrollo de funcionalidades
+        cliente-servidor.
       </Subtitle>
       <Subtitle>
-        dolor sit amet consectetur, adipisicing elit. Doloribus voluptatem
-        libero omnis porro fugiat recusandae? Lorem ipsum dolor sit, amet
-        consectetur adipisicing elit. Accusamus, minus.
-      </Subtitle>
-      <Subtitle>
-        dolor sit amet consectetur, adipisicing elit. Doloribus voluptatem
-        libero omnis porro fugiat recusandae? Lorem ipsum dolor sit amet.
+        Me gusta construir aplicaciones web que tengan un impacto positivo en la
+        sociedad. Y entregue soluciones que proporcionen valor a quienes las
+        implementan.
       </Subtitle>
     </Box>
   );

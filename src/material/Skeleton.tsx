@@ -2,12 +2,7 @@ import { Box, Skeleton } from '@mui/material/';
 
 export const SkeletonLoading = () => {
   return (
-    <Box
-      sx={{
-        maxWidth: '80%',
-        m: 'auto',
-      }}
-    >
+    <Box sx={{ idth: '80%', m: 'auto' }}>
       <Skeleton
         variant="rounded"
         animation="wave"
